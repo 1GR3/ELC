@@ -1,0 +1,42 @@
+$primary: #ff6838;
+$light: #fdf8f7;
+$dark: #000929;
+
+@import "./scss/bootstrap";
+
+.btn-primary {
+  --bs-btn-color: white;
+}
+h1,
+h3 {
+  font-family: "Playfair Display";
+}
+h1 {
+  font-size: 56px;
+}
+h3 {
+  font-size: 44px;
+}
+
+nav {
+  .navbar-brand img {
+    height: 28px;
+  }
+  background-color: $light;
+  .navbar-toggler {
+    border: transparent;
+  }
+  border-bottom: 1px solid rgba(0, 9, 41, 0.07);
+  @include media-breakpoint-up(md) {
+    background-color: white;
+    border-bottom: none;
+    .navbar-brand img {
+      height: 35px;
+    }
+  }
+}
+
+#map img {
+  width: 100%;
+  height: 650px;
+}
