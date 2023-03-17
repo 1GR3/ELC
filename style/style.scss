@@ -73,6 +73,19 @@ header {
     box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.05);
   }
 }
+#faq {
+  .accordion-button {
+    font-weight: 600;
+    font-size: 18px;
+    @include media-breakpoint-up(md) {
+      font-size: 24px;
+    }
+    &:not(.collapsed) {
+      --bs-accordion-active-color: $dark;
+      --bs-accordion-active-bg: transparent;
+    }
+  }
+}
 .card {
   width: 276px;
   border: none;
