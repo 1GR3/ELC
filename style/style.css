@@ -10777,6 +10777,12 @@ textarea.form-control-lg {
   :root {
     font-size: 18px;
   }
+  :root h1, :root .h1 {
+    font-size: 56px;
+  }
+  :root h3, :root .h3 {
+    font-size: 44px;
+  }
 }
 
 .btn-primary {
@@ -10790,11 +10796,11 @@ h3,
 }
 
 h1, .h1 {
-  font-size: 56px;
+  font-size: 28px;
 }
 
 h3, .h3 {
-  font-size: 44px;
+  font-size: 24px;
 }
 
 .rounded {
