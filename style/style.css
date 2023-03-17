@@ -10785,6 +10785,10 @@ textarea.form-control-lg {
   }
 }
 
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
 .btn-primary {
   --bs-btn-color: white;
 }
