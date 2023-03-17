@@ -8,7 +8,7 @@ $dark: #000929;
   --bs-body-font-size: 1rem;
 
   @include media-breakpoint-up(md) {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 .btn-primary {
@@ -49,9 +49,32 @@ nav {
     }
   }
 }
-
-.card-title {
-  color: #00288e;
+header {
+  p {
+    font-size: 14px;
+    @include media-breakpoint-up(md) {
+      font-size: 20px;
+    }
+  }
+}
+#rental {
+  .shadow {
+    box-shadow: 0px 2px 35px rgba(126, 186, 255, 0.25) !important;
+  }
+}
+.card {
+  width: 276px;
+  border: none;
+  .card-body {
+    --bs-card-spacer-y: 35px;
+    --bs-card-spacer-x: 25px;
+  }
+  .card-title {
+    color: #00288e;
+  }
+  .card-text {
+    font-size: 18px;
+  }
 }
 
 #map img {
