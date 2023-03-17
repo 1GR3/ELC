@@ -3,7 +3,14 @@ $light: #fdf8f7;
 $dark: #000929;
 
 @import "./scss/bootstrap";
+:root {
+  font-size: 14px;
+  --bs-body-font-size: 1rem;
 
+  @include media-breakpoint-up(md) {
+    font-size: 20px;
+  }
+}
 .btn-primary {
   --bs-btn-color: white;
 }
@@ -11,11 +18,18 @@ h1,
 h3 {
   font-family: "Playfair Display";
 }
+
 h1 {
   font-size: 56px;
 }
 h3 {
   font-size: 44px;
+}
+.rounded {
+  border-radius: 20px !important;
+  @include media-breakpoint-up(md) {
+    border-radius: 40px !important;
+  }
 }
 
 nav {
@@ -34,6 +48,10 @@ nav {
       height: 35px;
     }
   }
+}
+
+.card-title {
+  color: #00288e;
 }
 
 #map img {

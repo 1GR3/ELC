@@ -10769,6 +10769,16 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+:root {
+  font-size: 14px;
+  --bs-body-font-size: 1rem;
+}
+@media (min-width: 768px) {
+  :root {
+    font-size: 20px;
+  }
+}
+
 .btn-primary {
   --bs-btn-color: white;
 }
@@ -10785,6 +10795,15 @@ h1, .h1 {
 
 h3, .h3 {
   font-size: 44px;
+}
+
+.rounded {
+  border-radius: 20px !important;
+}
+@media (min-width: 768px) {
+  .rounded {
+    border-radius: 40px !important;
+  }
 }
 
 nav {
@@ -10805,6 +10824,10 @@ nav .navbar-toggler {
   nav .navbar-brand img {
     height: 35px;
   }
+}
+
+.card-title {
+  color: #00288e;
 }
 
 #map img {
