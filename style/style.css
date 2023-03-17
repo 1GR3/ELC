@@ -10839,6 +10839,10 @@ header p {
   box-shadow: 0px 2px 35px rgba(126, 186, 255, 0.25) !important;
 }
 
+#process .shadow {
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.05);
+}
+
 .card {
   width: 276px;
   border: none;
