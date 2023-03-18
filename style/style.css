@@ -10808,6 +10808,10 @@ h3, .h3 {
   font-size: 24px;
 }
 
+p {
+  color: rgba(0, 9, 41, 0.7);
+}
+
 .rounded {
   border-radius: 20px !important;
 }
