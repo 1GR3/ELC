@@ -85,12 +85,28 @@ header {
   .accordion-button {
     font-weight: 600;
     font-size: 18px;
+    position: relative;
     @include media-breakpoint-up(md) {
       font-size: 24px;
+    }
+    &::after {
+      flex-shrink: 0;
+      width: var(--bs-accordion-btn-icon-width);
+      height: var(--bs-accordion-btn-icon-width);
+      font-family: bootstrap-icons !important;
+      margin-left: 0;
+      right: 4px;
+      position: absolute;
+      content: "\F4F9";
+      transform: none;
+      background-image: none;
     }
     &:not(.collapsed) {
       --bs-accordion-active-color: $dark;
       --bs-accordion-active-bg: transparent;
+      &::after {
+        content: "\F2E5";
+      }
     }
   }
 }
