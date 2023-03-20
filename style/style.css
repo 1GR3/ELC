@@ -11003,6 +11003,10 @@ header .copy p {
   content: "\f2e5";
 }
 
+#contact input {
+  border: none !important;
+}
+
 footer img {
   height: 40px;
 }
