@@ -10847,6 +10847,8 @@ nav.navbar .navbar-toggler {
 }
 nav.navbar .navbar-nav .nav-link {
   color: rgba(0, 9, 41, 0.9);
+  font-size: 16px;
+  font-weight: 500;
 }
 nav.navbar .navbar-nav .nav-link.active {
   text-decoration: underline;
@@ -10863,12 +10865,30 @@ nav.navbar .navbar-nav .nav-link.active {
   }
 }
 
-header p {
+header {
+  position: relative;
+  overflow: hidden;
+}
+header .copy {
+  z-index: 2;
+}
+header .copy p {
   font-size: 14px;
 }
 @media (min-width: 768px) {
-  header p {
+  header .copy p {
     font-size: 20px;
+  }
+}
+@media (min-width: 768px) {
+  header .copy {
+    padding: 4rem 2rem;
+  }
+}
+@media (min-width: 768px) {
+  header .image {
+    position: absolute;
+    right: -10%;
   }
 }
 

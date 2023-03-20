@@ -87,10 +87,24 @@ nav.navbar {
   --bs-navbar-active-color: rgba(0, 0, 0, 0.9);
 }
 header {
-  p {
-    font-size: 14px;
+  position: relative;
+  overflow: hidden;
+  .copy {
+    p {
+      font-size: 14px;
+      @include media-breakpoint-up(md) {
+        font-size: 20px;
+      }
+    }
+    z-index: 2;
     @include media-breakpoint-up(md) {
-      font-size: 20px;
+      padding: 4rem 2rem;
+    }
+  }
+  .image {
+    @include media-breakpoint-up(md) {
+      position: absolute;
+      right: -10%;
     }
   }
 }
