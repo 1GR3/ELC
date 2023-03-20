@@ -10875,20 +10875,34 @@ header .copy {
 header .copy p {
   font-size: 14px;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   header .copy p {
     font-size: 20px;
   }
 }
 @media (min-width: 768px) {
   header .copy {
-    padding: 4rem 2rem;
+    padding-bottom: 8rem;
+  }
+}
+@media (min-width: 992px) {
+  header .copy {
+    padding: 8rem 2rem;
   }
 }
 @media (min-width: 768px) {
   header .image {
     position: absolute;
-    right: -10%;
+    top: 25%;
+    left: 0;
+  }
+}
+@media (min-width: 992px) {
+  header .image {
+    position: absolute;
+    left: unset;
+    top: 8%;
+    right: -2%;
   }
 }
 
