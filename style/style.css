@@ -10821,23 +10821,45 @@ p {
   }
 }
 
-nav {
+nav.navbar {
+  padding: 0.75rem 1rem;
   background-color: #fdf8f7;
   border-bottom: 1px solid rgba(0, 9, 41, 0.07);
+  --bs-navbar-color: rgba($dark, 0.7);
+  --bs-navbar-hover-color: rgba($dark, 0.85);
+  --bs-navbar-disabled-color: rgba(0, 0, 0, 0.5);
+  --bs-navbar-active-color: rgba(0, 0, 0, 0.9);
 }
-nav .navbar-brand img {
+nav.navbar .navbar-brand img {
   height: 28px;
 }
-nav .navbar-toggler {
+nav.navbar .navbar-toggler {
   border: transparent;
 }
 @media (min-width: 768px) {
-  nav {
+  nav.navbar {
     background-color: white;
-    border-bottom: none;
+    padding: 1.2rem 1rem;
   }
-  nav .navbar-brand img {
+  nav.navbar .navbar-brand img {
     height: 35px;
+  }
+}
+nav.navbar .navbar-nav .nav-link {
+  color: rgba(0, 9, 41, 0.9);
+}
+nav.navbar .navbar-nav .nav-link.active {
+  text-decoration: underline;
+  color: rgba(0, 9, 41, 0.9);
+}
+@media (min-width: 992px) {
+  nav.navbar .navbar-nav {
+    padding-left: 2rem;
+    border-left: 1px solid rgba(0, 9, 41, 0.3);
+    margin-left: 2rem;
+  }
+  nav.navbar .navbar-nav .nav-link {
+    padding: 0 1.2rem;
   }
 }
 

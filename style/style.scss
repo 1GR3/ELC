@@ -45,7 +45,8 @@ p {
   }
 }
 
-nav {
+nav.navbar {
+  padding: 0.75rem 1rem;
   .navbar-brand img {
     height: 28px;
   }
@@ -56,11 +57,34 @@ nav {
   border-bottom: 1px solid rgba(0, 9, 41, 0.07);
   @include media-breakpoint-up(md) {
     background-color: white;
-    border-bottom: none;
+    //border-bottom: none;
+    padding: 1.2rem 1rem;
     .navbar-brand img {
       height: 35px;
     }
   }
+  .navbar-nav {
+    .nav-link {
+      color: rgba($dark, 0.9);
+      &.active {
+        text-decoration: underline;
+        color: rgba($dark, 0.9);
+      }
+    }
+    @include media-breakpoint-up(lg) {
+      padding-left: 2rem;
+      border-left: 1px solid rgba($dark, 0.3);
+      margin-left: 2rem;
+      .nav-link {
+        padding: 0 1.2rem;
+      }
+    }
+  }
+
+  --bs-navbar-color: rgba($dark, 0.7);
+  --bs-navbar-hover-color: rgba($dark, 0.85);
+  --bs-navbar-disabled-color: rgba(0, 0, 0, 0.5);
+  --bs-navbar-active-color: rgba(0, 0, 0, 0.9);
 }
 header {
   p {
