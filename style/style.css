@@ -11007,6 +11007,10 @@ header .copy p {
   border: none !important;
 }
 
+footer {
+  font-size: 14px;
+  line-height: 2rem;
+}
 footer img {
   height: 40px;
 }
